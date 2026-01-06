@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ENV HOSTKEY_DIR=/keys/hostkey
 
-RUN sed -i 's/^(# ?)?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+RUN sed -i 's/^#PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     rm /etc/ssh/ssh_host_*_key
 
 RUN --mount=type=secret,id=root-passwd,env=ROOT_PASSWD \
