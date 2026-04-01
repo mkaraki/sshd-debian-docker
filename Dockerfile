@@ -1,7 +1,7 @@
 FROM debian:trixie-slim@sha256:26f98ccd92fd0a44d6928ce8ff8f4921b4d2f535bfa07555ee5d18f61429cf0c
 
 # renovate: suite=trixie depName=openssh-server
-ARG OPENSSH_SERVER_VERSION="1:10.0p1-7"
+ARG OPENSSH_SERVER_VERSION="1:10.0p1-7+deb13u1"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-server="${OPENSSH_SERVER_VERSION}" \
