@@ -1,4 +1,4 @@
-FROM debian:trixie-slim@sha256:d7e12182ce18b85b93007c1dedf31f2d29e01ccf3182cc4017c709b6259bc132
+FROM debian:trixie-slim@sha256:62bd423aeee912639ca8ee681c2b762cb3e25137e0a92b20be455898a9f034ad
 
 # renovate: suite=trixie depName=openssh-server
 ARG OPENSSH_SERVER_VERSION="1:10.0p1-7+deb13u4"
